@@ -200,7 +200,7 @@ export async function ForgotPasswordLink(
     },
   });
 
-  const resetLink = `${process.env.NEXT_PUBLIC_BASE_URL}/Auth/ResetPassword?token=${token}`;
+  const resetLink = `${process.env.NEXT_PUBLIC_BASE_URL}Auth/ResetPassword?token=${token}`;
 
   const mailOptions = {
     from: `"EchoLink" <${process.env.SMTP_EMAIL}>`,

@@ -128,7 +128,7 @@ async function UserSignUp(res: NextApiResponse, data: any, jwtHeader: any) {
 
   let token = crypto.randomBytes(32).toString("hex");
 
-  const confirmLink = `${process.env.NEXT_PUBLIC_BASE_URL}/Auth/EmailConfirmed?token=${token}`;
+  const confirmLink = `${process.env.NEXT_PUBLIC_BASE_URL}Auth/EmailConfirmed?token=${token}`;
 
   console.log(isGoogle,"isGoogle");
   

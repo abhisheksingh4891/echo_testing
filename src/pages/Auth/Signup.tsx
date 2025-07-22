@@ -47,7 +47,7 @@ const Signup = () => {
 
   const handleGoogleSignIn = () => {
     const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
-    const redirectUri = `${process.env.NEXT_PUBLIC_BASE_URL}/Auth/GoogleRedirect`;
+    const redirectUri = `${process.env.NEXT_PUBLIC_BASE_URL}Auth/GoogleRedirect`;
     const scope = "openid email profile";
     const state = Math.random().toString(36).substring(7);
     const nonce = Math.random().toString(36).substring(7); // Add this line
